@@ -1,0 +1,4 @@
+<h2>Componente hijo</h2>
+@for (book of books(); track book.id) {
+    <app-book-card [bookCard]=book (info)=deleteBook($event)></app-book-card>
+}
